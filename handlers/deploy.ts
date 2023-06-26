@@ -4,7 +4,7 @@ import * as fs from 'node:fs';
 import * as path from 'node:path';
 
 const commands = [];
-const foldersPath: string = path.join(__dirname, 'commands');
+const foldersPath: string = path.join(__dirname, '../commands');
 const commandFolders: Array<string> = fs.readdirSync(foldersPath);
 
 for (const folder of commandFolders) {
